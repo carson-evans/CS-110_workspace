@@ -1,0 +1,10 @@
+# Accepts a (int) and b (int) from standard input and writes to standard output the value of
+# a^2 + b^2.
+
+0    read     r0          # read a
+1    read     r1          # read b
+2    mul      r2 r0 r0    # c = a * a
+3    mul      r3 r1 r1    # d = b * b
+4    add      r4 r2 r3    # e = c + d
+5    write    r4          # write e
+6    halt                 # halt the machine

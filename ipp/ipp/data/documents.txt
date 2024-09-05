@@ -1,0 +1,7 @@
+constitution.txt
+tomsawyer.txt
+huckfinn.txt
+tale.txt
+prejudice.txt
+actg.txt
+djia.csv

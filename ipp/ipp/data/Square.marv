@@ -1,0 +1,13 @@
+# Accepts n (int) from standard input and writes n * n to standard output.
+
+0    read     r0           # read n
+1    calln    r12 4        # result = square(n)
+2    write    r13          # write result
+3    halt                  # halt the machine
+
+# int square(int n):
+#   input : r0 = n
+#   output: r13 = n * n
+
+4    mul      r13 r0 r0    # output = n * n
+5    jumpr    r12          # jump to caller

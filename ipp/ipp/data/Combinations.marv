@@ -1,0 +1,28 @@
+# Accepts n (int) and k (int) from standard input and writes C(n, k) = n!/(k!(n-k)!) to standard output.
+
+0     read     r0            # read n
+1     read     r1            # read k
+2     copy     r2 r0         # r2 = n
+3     calln    r12 13        # n! = factorial(n)
+4     copy     r4 r13        # r4 = n!
+5     copy     r2 r1         # r2 = k
+6     calln    r12 13        # k! = factorial(k)
+7     div      r4 r4 r13     # r4 = n!/k!
+8     sub      r2 r0 r1      # r2 = n - k
+9     calln    r12 13        # (n-k)! = factorial(n-k)
+10    div      r4 r4 r13     # r4 = n!/(k!(n-k)!)
+11    write    r4            # write n!/(k!(n-k)!)
+12    halt                   # halt the machine
+
+# int factorial(int n):
+#   input : r2 = n
+#   output: r13 = n!
+#   temps: r3
+
+13    setn     r13 1         # output = 1
+14    copy     r3 r2         # i = n
+15    jeqzn    r3 19         # if i = 0 jump to 19
+16    mul      r13 r13 r3    # output = output * i
+17    addn     r3 -1         # i = i - 1
+18    jumpn    15            # jump to 15
+19    jumpr    r12           # jump to caller

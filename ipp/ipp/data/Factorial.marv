@@ -1,0 +1,53 @@
+# Accepts n (int) from standard input and writes n! (computed recursively) to standard output.
+
+0     read      r0            # read n
+1     pushr     r0 r15        # mem[sp++] = n
+2     calln     r12 6         # n! = factorial(n)
+3     addn      r15 -1        # sp = sp - 1
+4     write     r13           # write n!
+5     halt                    # halt the machine
+
+# int factorial(int n):
+#   input : r0 = n
+#   output: r13 = n!
+#   temps: r1, r2
+
+# Save ra and fp, and set fp to sp.
+6     pushr     r12 r15       # mem[sp++] = ra
+7     pushr     r14 r15       # mem[sp++] = fp
+8     copy      r14 r15       # fp = sp
+
+# Save registers used.
+9     pushr     r0 r15        # mem[sp++] = r0
+10    pushr     r1 r15        # mem[sp++] = r1
+11    pushr     r2 r15        # mem[sp++] = r2
+
+# Fetch n into r0.
+12    setn      r1 -3         # temp = -3
+13    add       r1 r14 r1     # temp = fp - 3
+14    loadr     r0  r1        # n = mem[temp]
+
+15    jnezn     r0 18         # if n != 0 jump to 24 (recursive step),
+                              # else fall through (base case)
+
+# Base case.
+16    setn      r13 1         # output = 1
+17    jumpn     24            # jump to 24
+
+# Recursive step.
+18    copy      r2 r0         # r2 = n
+19    addn      r2 -1         # n = n - 1
+20    pushr     r2 r15        # mem[sp++] = n - 1
+21    calln     r12 6         # (n-1)! = factorialRec(n-1)
+22    addn      r15 -1        # sp = sp - 1
+23    mul       r13 r0 r13    # n! = n(n-1)!
+
+# Restore registers used.
+24    popr      r2 r15        # r2 = mem[--r15]
+25    popr      r1 r15        # r1 = mem[--r15]
+26    popr      r0 r15        # r0 = mem[--r15]
+
+# Restore fp and ra, and jump to ra (caller).
+27    popr      r14 r15       # fp = mem[--r15]
+28    popr      r12 r15       # ra = mem[--r15]
+29    jumpr     r12           # jump to caller

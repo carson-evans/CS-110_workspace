@@ -1,38 +1,38 @@
 1. Provide a high-level description (ie, using minimal amount of technical jargon) of each problem
 in no more than 100 words.
 
-Problem 1 (Name and Age): ...
+Problem 1 (Name and Age): ... Write a python script that accepts a name and age, then prints a sentence concatinating the two
 
-Problem 2 (Greet Three): ...
+Problem 2 (Greet Three): ... Write a python script that accepts three names and prints a greeting message concating all three in reverse
 
-Problem 3 (Day of the Week): ...
+Problem 3 (Day of the Week): ... Write a python script that calculates the day of the week for a given date accepting year month and day using a given formula
 
-Problem 4 (Three Sort): ...
+Problem 4 (Three Sort): ... Write a python script that accepts three mumbers and prints them in ascending order using basic math
 
-Problem 5 (Body Mass Index): ...
+Problem 5 (Body Mass Index): ... Write a python script that computes a person's BMI based on accepted weight and height and output result
 
-Problem 6 (Wind Chill): ...
+Problem 6 (Wind Chill): ... Write a python script that calculates the wind chill based on temperature amd wind speed using a given formula
 
-Problem 7 (Gravitational Force): ...
+Problem 7 (Gravitational Force): ... Write a python script that computes the gravitational force between two objects given their masses and the distance between
 
-Problem 8 (Gambler's Ruin): ...
+Problem 8 (Gambler's Ruin): ... Write a python script that simulates a coin flip game and calculates the probabilities of two players ending penniless
 
-Problem 9 (Waiting Time): ...
+Problem 9 (Waiting Time): ... Write a python script that calculates the probability of waiting longer than a given time for an event to occur using exponential distribution formula
 
-Problem 10 (Cartesian Coordinates): ...
+Problem 10 (Cartesian Coordinates): ... Write a python script that converts polar coordinates to cartesian coordinates
 
-Problem 11 (Great Circle Distance): ...
+Problem 11 (Great Circle Distance): ... Write a python script tthat computes the shortest distance between two points on earth using long and lat
 
-Problem 12 (Snell's Law): ...
+Problem 12 (Snell's Law): ... Write a python script that calculates the angle of refraction when light passes from one medium to another
 
-Problem 13 (Uniform Random Numbers): ...
+Problem 13 (Uniform Random Numbers): ... Write a python script that generates three random numbers in a specified range and calculates their mean, variance, and standard deviation
 
-Problem 14 (Die Roll): ...
+Problem 14 (Die Roll): ... Write a python script that simulates rolling a die twice and prints the sum of the numbers rolled
 
-Problem 15 (Triangle Inequality): ...
+Problem 15 (Triangle Inequality): ... Write a python script that determines whether three side lengths can form a triangle by checking the inequality theorem
 
 2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
-the nature of help received.
+the nature of help received. No, I did not.
 
 Name                   Status           Help Received
 ----                   ------           -------------
@@ -41,5 +41,8 @@ Name                   Status           Help Received
 
 3. List any other comments here. Feel free to provide any feedback on how much you learned from
 doing the assignment, and whether you enjoyed doing it.
+
+If you are reading this, add me on github and linkedin.
+Go Dawgs!
 
 ...

@@ -26,4 +26,4 @@ var = ((x1 - mew) ** 2 + (x2 - mew) ** 2 + (x3 - mew) ** 2) / 3
 # Standard deviation
 std = math.sqrt(var)
 
-print(f"{mew}, {var}, {std}")
+print(f"{mew: .16f} {var: .16f} {std: .16f}")

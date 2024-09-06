@@ -9,6 +9,6 @@ p = float(sys.argv[3]) # prob that player 1 wins each toss
 q = 1 - p # prob that player 2 wins each toss
 
 p1 = (1 - (p / q) ** n2) / (1 - (p / q) ** (n1 + n2))
-p2 = (1 - (p / q) ** n1) / (1 - (p / q) ** (n1 + n2))
+p2 = (1 - (q / p) ** n1) / (1 - (q / p) ** (n1 + n2))
 
 print(f"{p1} {p2}")

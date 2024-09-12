@@ -20,4 +20,4 @@ y2 = math.radians(y2)
 # Formula
 d = earthRadius * math.acos(math.sin(x1) * math.sin(x2) + math.cos(x1) * math.cos(x2) * math.cos(y1 - y2))
 
-print(d)
+stdio.writeln(d)

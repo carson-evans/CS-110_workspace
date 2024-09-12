@@ -7,4 +7,7 @@ name = sys.argv[1]
 age = sys.argv[2]
 
 # Print result
-print(name + " is " + age + " years old. ")
+stdio.write(name)
+stdio.write(" is ")
+stdio.write(age)
+stdio.write(" years old.")

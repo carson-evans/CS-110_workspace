@@ -19,4 +19,4 @@ sin_theta_2 = (n1 / n2) * math.sin(theta_1_rad)
 theta_2_rad = math.asin(sin_theta_2)
 theta_2 = math.degrees(theta_2_rad)
 
-print(theta_2)
+stdio.writeln(theta_2)

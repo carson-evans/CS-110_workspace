@@ -11,4 +11,4 @@ t = float(sys.argv[2]) # time
 # p = e^−λt
 p = math.exp(-lmbda * t)
 
-print(p)
+stdio.writeln(p)

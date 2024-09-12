@@ -10,4 +10,6 @@ maximum = (max(x,y,z)) # Find maximum
 minimum = (min(x,y,z)) # Find minimum
 middle = (x + y + z - minimum - maximum) # Find median
 
-print(minimum, middle, maximum)
+stdio.write(minimum)
+stdio.write(middle)
+stdio.write(maximum)

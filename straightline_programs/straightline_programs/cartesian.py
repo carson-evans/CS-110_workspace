@@ -16,4 +16,6 @@ theta_radians = math.radians(theta_degrees)
 x = r * math.cos(theta_radians)
 y = r * math.sin(theta_radians)
 
-print(x, y)
+stdio.write(x)
+stdio.write(" ")
+stdio.write(y)

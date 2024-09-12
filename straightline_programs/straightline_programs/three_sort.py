@@ -11,5 +11,7 @@ minimum = (min(x,y,z)) # Find minimum
 middle = (x + y + z - minimum - maximum) # Find median
 
 stdio.write(minimum)
+stdio.write(" ")
 stdio.write(middle)
+stdio.write(" ")
 stdio.write(maximum)

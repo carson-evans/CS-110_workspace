@@ -32,7 +32,7 @@ Problem 14 (Perfect Numbers): ...
 Problem 15 (Ramanujan Numbers): ...
 
 2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
-the nature of help received.
+the nature of help received. No, I did not.
 
 Name                   Status           Help Received
 ----                   ------           -------------
@@ -43,3 +43,6 @@ Name                   Status           Help Received
 doing the assignment, and whether you enjoyed doing it.
 
 ...
+
+If you are reading this, add me on github and linkedin.
+Go Dawgs!

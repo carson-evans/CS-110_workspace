@@ -16,16 +16,16 @@ dow = (d + x0 + 31 * m0 // 12) % 7
 
 # Print day of the week (0 for Sunday, 1 for Monday, and so on)
 if dow == 0:
-    stdio.writeln("Sunday")
+    sys.stdout.write("Sunday\n")
 if dow == 1:
-    stdio.writeln("Monday")
+    sys.stdout.write("Monday\n")
 if dow == 2:
-    stdio.writeln("Tuesday")
+    sys.stdout.write("Tuesday\n")
 if dow == 3:
-    stdio.writeln("Wednesday")
+    sys.stdout.write("Wednesday\n")
 if dow == 4:
-    stdio.writeln("Thursday")
+    sys.stdout.write("Thursday\n")
 if dow == 5:
-    stdio.writeln("Friday")
+    sys.stdout.write("Friday\n")
 if dow == 6:
-    stdio.writeln("Saturday")
+    sys.stdout.write("Saturday\n")

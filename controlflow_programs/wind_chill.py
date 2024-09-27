@@ -10,9 +10,9 @@ v = float(sys.argv[2]) # Wind speed in miles per hour
 # w = 35.74 + 0.6215t + (0.4275t − 35.75)v^0.16
 
 if t > 50 :
-    stdio.writeln("Value of t must be ≤ 50 F")
+    sys.stdout.write("Value of t must be ≤ 50 F")
 if v <= 3 :
-    stdio.writeln("Value of v must be > 3 mph")
+    sys.stdout.write("Value of v must be > 3 mph")
 else :
-    w = 35.74 + (0.6214 * t) + (0.4275 * t - 35.75) * (v ** 0.16)
-    stdio.writeln(w)
+    w = 35.74 + 0.6214 * t + (0.4275 * t - 35.75) * v ** 0.16
+    sys.stdout.write(f"{w}\n")

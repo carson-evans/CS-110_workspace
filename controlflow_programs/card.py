@@ -27,46 +27,15 @@ if suit == 4:
 card = stdrandom.uniformInt(1, 13)
 
 if card == 1:
-    cardString = "1"
-
-if card == 2:
-    cardString = "2"
-
-if card == 3:
-    cardString = "3"
-
-if card == 4:
-    cardString = "4"
-
-if card == 5:
-    cardString = "5"
-
-if card == 6:
-    cardString = "6"
-
-if card == 7:
-    cardString = "7"
-
-if card == 8:
-    cardString = "8"
-
-if card == 9:
-    cardString = "9"
-
-if card == 10:
-    cardString = "10"
-
-if card == 11:
-    cardString = "Jack"
-
-if card == 12:
-    cardString = "Queen"
-
-if card == 13:
-    cardString = "King"
-
-if card == 14:
     cardString = "Ace"
+elif card == 11:
+    cardString = "Jack"
+elif card == 12:
+    cardString = "Queen"
+elif card == 13:
+    cardString = "King"
+else:
+    cardString = str(card) # For cards 2 through 10, just convert to string
 
 # Concat
 stdio.write(cardString)

@@ -16,12 +16,17 @@ import sys
 
 # accept n (int) as cli and write directions for dragon
 
+# Accept n as cli
 n = int(sys.argv[1])
+dragon = "F"
+nogard = "F"
 
-if n == 0:
-    sys.stdout.write("F\n")
-else:
-    results = "F"
-    for _ in range(n):
-        result = result + "L" + result.replace("L", "X").replace("R", "L").replace("X", "R")
-    sys.stdout.write(result + "\n")
+for i in range(n):
+    # Create new dragon and nogard for the iteration
+    new_dragon = dragon + "L" + nogard
+    new_nogard = dragon + "R" + nogard
+    # Update dragon and nogard for the next iteration
+    dragon = new_dragon
+    nogard = new_nogard
+
+stdio.writeln(dragon)

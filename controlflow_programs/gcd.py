@@ -4,11 +4,10 @@ import sys
 ...
 
 p = int(sys.argv[1])
-q = int(sys.argv[1])
+q = int(sys.argv[2])
 
-while q:
-    temp = q
-    q = p % q
-    p = temp
+# Euclid's
+while q != 0:
+    p, q = q, p % q
 
-stdio.write(f"{p}\n")
+stdio.writeln(p)

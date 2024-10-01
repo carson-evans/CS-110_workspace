@@ -4,9 +4,11 @@ import sys
 ...
 
 n = int(sys.argv[1])
-result = 1
 
-for i in range(1, n+1):
-    result *= i
+a, b = 0, 1
 
-sys.stdout.write(f"{result}\n")
+# iterate
+for i in range(2, n + 1):
+    a, b = b, a + b
+
+stdio.writeln(b)

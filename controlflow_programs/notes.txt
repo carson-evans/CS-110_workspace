@@ -1,35 +1,35 @@
 1. Provide a high-level description (ie, using minimal amount of technical jargon) of each problem
 in no more than 100 words.
 
-Problem 1 (Quadratic Equation): ...
+Problem 1 (Quadratic Equation): A program that accepts a, b, and c as cli and writes to standard output the roots of the quadratic equation with handle case.
 
-Problem 2 (Wind Chill): ...
+Problem 2 (Wind Chill): Given the temperature and wind speed write the wind chill with the National Weather Service formula.
 
-Problem 3 (Day of the Week): ...
+Problem 3 (Day of the Week): Computes the day of the week and writes to string.
 
-Problem 4 (Six-sided Die): ...
+Problem 4 (Six-sided Die): Simulates the roll of a six-sided die, and writes to standard output the pattern on the top face.
 
-Problem 5 (Playing Card): ...
+Problem 5 (Playing Card): Simulates the selection of a "Random" card from a standard deck of 52 playing cards.
 
-Problem 6 (Dragon Curve): ...
+Problem 6 (Dragon Curve): Writes the output for drawing a dragon curve of order n.
 
-Problem 7 (Greatest Common Divisor): ...
+Problem 7 (Greatest Common Divisor): Computes the greatest common divisor of two numbers.
 
-Problem 8 (Root Finding): ...
+Problem 8 (Root Finding): Finds the root up to a given decimal place.
 
-Problem 9 (Sum of Powers): ...
+Problem 9 (Sum of Powers): Accepts two numbers as cli and writes to standard output the sum of powers.
 
-Problem 10 (Factorial Function): ...
+Problem 10 (Factorial Function): Writes to standard output n!
 
-Problem 11 (Fibonacci Function): ...
+Problem 11 (Fibonacci Function): Writes the nth number from the fibonacci sequence
 
-Problem 12 (Primality Test): ...
+Problem 12 (Primality Test): Tests if a number is prime or not
 
-Problem 13 (Counting Primes): ...
+Problem 13 (Counting Primes): Writes the number of primes less than or equal to n.
 
-Problem 14 (Perfect Numbers): ...
+Problem 14 (Perfect Numbers): Writes the perfect numbers that are less than or equal to n.
 
-Problem 15 (Ramanujan Numbers): ...
+Problem 15 (Ramanujan Numbers): Find distinct positive integers a, b, c, abd d such that a^3 + b^3 = c^3 + d^3 < or = n
 
 2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
 the nature of help received. No, I did not.

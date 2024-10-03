@@ -1,29 +1,29 @@
 1. Provide a high-level description (ie, using minimal amount of technical jargon) of each problem
 in no more than 100 words.
 
-Problem 1 (Quadratic Equation): A program that accepts a, b, and c as cli and writes to standard output the roots of the quadratic equation with handle case.
+Problem 1 (Quadratic Equation): A program that accepts a, b, and c as cli and writes to standard output the roots of the quadratic equation with handle case. Original program failed on test #4, solution was to change to float division.
 
-Problem 2 (Wind Chill): Given the temperature and wind speed write the wind chill with the National Weather Service formula.
+Problem 2 (Wind Chill): Given the temperature and wind speed write the wind chill with the National Weather Service formula. Original program had an issue and solution was to update to the correct constant value and change parenthesis in equation.
 
 Problem 3 (Day of the Week): Computes the day of the week and writes to string.
 
 Problem 4 (Six-sided Die): Simulates the roll of a six-sided die, and writes to standard output the pattern on the top face.
 
-Problem 5 (Playing Card): Simulates the selection of a "Random" card from a standard deck of 52 playing cards.
+Problem 5 (Playing Card): Simulates the selection of a "Random" card from a standard deck of 52 playing cards. Original program had a logic flaw where there was a 1 card and ace card. Also lowered the number of if statements used.
 
 Problem 6 (Dragon Curve): Writes the output for drawing a dragon curve of order n.
 
 Problem 7 (Greatest Common Divisor): Computes the greatest common divisor of two numbers.
 
-Problem 8 (Root Finding): Finds the root up to a given decimal place.
+Problem 8 (Root Finding): Finds the root up to a given decimal place. Original idea was a brute force guess but that had an issue on gradescope with a timeout 30s. Solution was to change to Newton's method
 
 Problem 9 (Sum of Powers): Accepts two numbers as cli and writes to standard output the sum of powers.
 
-Problem 10 (Factorial Function): Writes to standard output n!
+Problem 10 (Factorial Function): Writes to standard output n! Updated logic from original and included a string conversion.
 
-Problem 11 (Fibonacci Function): Writes the nth number from the fibonacci sequence
+Problem 11 (Fibonacci Function): Writes the nth number from the fibonacci sequence. Updated for loop to a, b = b, a + b.
 
-Problem 12 (Primality Test): Tests if a number is prime or not
+Problem 12 (Primality Test): Tests if a number is prime or not. Original failed on test #3 solution was to change from a division to approx square root of n.
 
 Problem 13 (Counting Primes): Writes the number of primes less than or equal to n.
 

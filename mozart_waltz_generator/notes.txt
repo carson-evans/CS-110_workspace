@@ -1,0 +1,29 @@
+1. For each problem, provide in more than 100 words, a short, high-level description of the problem;
+your approach to solve it; and any issues you encountered and if/how you managed to solve them.
+
+Problem 1 (Reverse): ...
+
+Problem 2 (Euclidean Distance): ...
+
+Problem 3 (Birthday Problem): ...
+
+Problem 4 (Transpose): ...
+
+Problem 5 (Pascal's Triangle): ...
+
+Problem 6 (Generating the Waltz): ...
+
+Problem 7 (Playing the Waltz): ...
+
+2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
+the nature of help received.
+
+Name                   Status           Help Received
+----                   ------           -------------
+
+...                    ...              ...
+
+3. List any other comments here. Feel free to provide any feedback on how much you learned from
+doing the assignment, and whether you enjoyed doing it.
+
+...

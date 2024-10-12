@@ -1,3 +1,5 @@
+# generatewaltz.py
+
 import stdarray
 import stdrandom
 import stdio
@@ -34,15 +36,15 @@ for i in range(6):
 # Generate 16 minuet measures
 minuetSequence = []
 for i in range(16):
-    dice_roll = stdrandom.uniformInt(1, 6) + stdrandom.uniformInt(1, 6)
-    measure = minuetMeasures[dice_roll - 1][i]
+    dice_roll = stdrandom.uniformInt(1, 6) + stdrandom.uniformInt(1, 6) # two dice
+    measure = minuetMeasures[dice_roll - 2][i]
     minuetSequence.append(measure)
 
 # generate 16 trio measures
 trioSequence = []
 for i in range(16):
     # Roll one die 1 to 6
-    dice_roll = stdrandom.uniformInt(1, 6)
+    dice_roll = stdrandom.uniformInt(1, 6) # one die roll
     # Use dice roll to pick a measure from the corresponding colum of trioMeasures
     measure = trioMeasures[dice_roll - 1][i]
     trioSequence.append(measure)

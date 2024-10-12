@@ -1,3 +1,5 @@
+# playwaltz.py
+
 import stdaudio
 import stdio
 import sys
@@ -42,13 +44,13 @@ for i in range(16, 32):
 
 # Play the minuet measures
 for i in range(16):
-    filename = 'data/T' + str(measures[i]) + '.wav'
+    filename = 'data/M' + str(measures[i])
     #Play
     stdaudio.playFile(filename)
 
 # play trio measures
 for i in range(16, 32):
-    filename = 'data/M' + str(measures[i]) + '.wav'
+    filename = 'data/T' + str(measures[i])
     # Play
     stdaudio.playFile(filename)
 

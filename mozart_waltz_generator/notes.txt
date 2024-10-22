@@ -1,22 +1,22 @@
 1. For each problem, provide in more than 100 words, a short, high-level description of the problem;
 your approach to solve it; and any issues you encountered and if/how you managed to solve them.
 
-Problem 1 (Reverse): ...
+Problem 1 (Reverse): Accepts strings from standard input and writes them in reverse order to standard output
 
-Problem 2 (Euclidean Distance): ...
+Problem 2 (Euclidean Distance): accepts n as cli arg, two n-dimensional lists x and y, and writes the euclidean distance between two vectors represented by x and y.
 
-Problem 3 (Birthday Problem): ...
+Problem 3 (Birthday Problem): Accepts trials as cli arg, runs trials num of experiments, sample until two people share a birthday, and writes the output
 
-Problem 4 (Transpose): ...
+Problem 4 (Transpose): Accepts m and n as cli args, m by n floats from stdin representing the elements of an m by n matrix a, and writes to stdout the transpose of a.
 
-Problem 5 (Pascal's Triangle): ...
+Problem 5 (Pascal's Triangle): Accepts n as cli arg and writes Pn to stdout
 
-Problem 6 (Generating the Waltz): ...
+Problem 6 (Generating the Waltz): Accepts the minuet and trio tables from stdin, generates a random sequence of 32 measures according to a ruleset, and writes the sequence to stdout
 
-Problem 7 (Playing the Waltz): ...
+Problem 7 (Playing the Waltz): Accepts a sequence of 32 ints representing the 32 measures of a waltz, plays to stdaudio. Includes small test checks that must pass for program to run.
 
 2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
-the nature of help received.
+the nature of help received. Nope
 
 Name                   Status           Help Received
 ----                   ------           -------------
@@ -26,4 +26,5 @@ Name                   Status           Help Received
 3. List any other comments here. Feel free to provide any feedback on how much you learned from
 doing the assignment, and whether you enjoyed doing it.
 
-...
+If you are reading this, add me on github and linkedin.
+Go Dawgs!

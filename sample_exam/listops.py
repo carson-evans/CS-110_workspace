@@ -29,11 +29,12 @@ def count (a):
 # Unit tests the library . [DO NOT EDIT ]
 def _main ():
     import stdio
+
     a = [False, False, True, False, True, True, True]
     stdio.writeln(any(a))
     stdio.writeln(all(a))
-    stdio.writeln(exactly(a,3))
+    stdio.writeln(exactly(a, 3))
     stdio.writeln(count(a))
 
-if __name__ == " __main__ ":
+if __name__ == "__main__":
     _main()

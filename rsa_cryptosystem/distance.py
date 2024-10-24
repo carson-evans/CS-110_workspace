@@ -16,6 +16,21 @@ def main():
 
 def _distance(x, y):
     ...
+    # returns the euclidean distance between the vectors x and y
+    # represented as one dimensional list of floats
+
+    # calculated as square root of the sum of squares of the differences
+    # between the corresponding entries
+
+    n = len(x) # set n to num of elements in x
+    d = 0.0 # distance
+
+    # for each i in [0,n):
+        # increment d by (x[i] - y[i])^2
+    for i in range (n):
+        d += (x[i] - y[i]) ** 2
+
+    return math.sqrt(d)
 
 
 if __name__ == "__main__":

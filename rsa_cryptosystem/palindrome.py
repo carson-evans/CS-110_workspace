@@ -12,6 +12,17 @@ def main():
 def _isPalindrome(s):
     ...
 
+    # set n to num of chars in s
+    n = len(s)
+
+    # for each i in [0, n/2]
+        # return false if s[i] is different from s[n - i - 1]
+    for i in range(0, n//2):
+       if s[i] != s[n - i - 1]:
+           return False
+
+    # return true
+    return True
 
 if __name__ == "__main__":
     main()

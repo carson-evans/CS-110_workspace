@@ -1,7 +1,7 @@
+# rsa.py
 import stdio
 import stdrandom
 import sys
-
 
 # Generates and returns the public/private keys as a tuple (n, e, d). Prime numbers p and q
 # needed to generate the keys are picked from the interval [lo, hi).

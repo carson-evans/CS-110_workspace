@@ -1,7 +1,7 @@
+# decrypt.py
 import rsa
 import stdio
 import sys
-
 from rsa_cryptosystem.rsa import decrypt
 
 
@@ -19,7 +19,7 @@ def main():
 
     try:
         n = int(sys.argv[1])
-        e = int(sys.argv[2])
+        d = int(sys.argv[2])
     except ValueError:
         return
 

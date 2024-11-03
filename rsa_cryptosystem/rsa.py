@@ -84,6 +84,9 @@ def _sample(a, k):
     if k > len(a):
         raise ValueError
 
+    if k == len(a):
+        return a[:]
+
     # Create a copy of list to avoid modifying original
     a_copy = a[:]
     sample = []

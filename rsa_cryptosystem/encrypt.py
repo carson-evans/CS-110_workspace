@@ -1,7 +1,7 @@
+# encrypt.py
 import rsa
 import stdio
 import sys
-
 
 # Entry point.
 def main():

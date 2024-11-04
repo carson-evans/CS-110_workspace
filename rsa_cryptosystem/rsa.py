@@ -16,28 +16,27 @@ def keygen(lo, hi):
     m = (p - 1) * (q - 1)
 
     # Choose e such that 1 < e < m and gcd(e, m) = 1
-    e = stdrandom.uniformInt(2, m)
+    e = stdrandom.uniformInt(2, m - 1)
     while True:
-        # Check if e and m are coprime
+        # Compute gcd of e and m
         a, b = e, m
         while b != 0:
             a, b = b, a % b
-        if a == 1:  # e and m are coprime
+        if a == 1:
             break
-        e = stdrandom.uniformInt(2, m)
+        e = stdrandom.uniformInt(2, m - 1)
 
-    # Calculate d using the Extended Euclidean Algorithm to find the modular inverse of e mod m
-    # Store original values of e and m for calculating d
-    e_orig, m_orig = e, m
-    x0, x1 = 0, 1
-    while e_orig > 1:
-        q = e_orig // m_orig
-        e_orig, m_orig = m_orig, e_orig % m_orig
-        x0, x1 = x1 - q * x0, x0
-    if x1 < 0:
-        x1 += m
+    # Compute d, the modular inverse of e modulo m using the Extended Euclidean Algorithm
+    old_r, r = m, e
+    old_s, s = 0, 1
 
-    d = x1
+    while r != 0:
+        quotient = old_r // r
+        old_r, r = r, old_r - quotient * r
+        old_s, s = s, old_s - quotient * s
+
+    # Ensure d is positive
+    d = old_s % m
 
     return n, e, d
 

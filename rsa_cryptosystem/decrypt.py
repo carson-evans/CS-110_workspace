@@ -1,38 +1,36 @@
 # decrypt.py
 import rsa
-import stdio
 import sys
-from rsa_cryptosystem.rsa import decrypt
 
-
-# Entry point.
 def main():
-    """
-    Main function to decrypt a message using RSA private key.
-    Accepts private-key n (int) and d (int) as cla.
-    Decrypts each fixed-width binary and outputs the original message.
-    """
-
-    # QA
+    # Verify command-line arguments
     if len(sys.argv) != 3:
-        return
+        sys.exit("Usage: python3 decrypt.py n d")
 
     try:
         n = int(sys.argv[1])
         d = int(sys.argv[2])
     except ValueError:
-        return
+        sys.exit("n and d must be integers")
 
-    # determine the num of bits (width) needed to encode n
+    # Determine the number of bits (width) needed to encode n
     width = rsa.bitLength(n)
 
     # Read the encrypted message from stdin
-    encrypted_message = stdio.readString()
+    encrypted_message = sys.stdin.read()
 
-    # Decrypt each fixed-width binary segment in message
+    # Remove any trailing newline or whitespace characters
+    encrypted_message = encrypted_message.strip()
+
+    # Decrypt each fixed-width binary segment in the message
+    decrypted_message = ""
     for i in range(0, len(encrypted_message), width):
         # Extract substring of length width
         s = encrypted_message[i: i + width]
+
+        # If the length of s is less than width, skip it
+        if len(s) < width:
+            continue
 
         # Convert binary string to int
         y = rsa.bin2dec(s)
@@ -40,11 +38,11 @@ def main():
         # Decrypt using RSA
         decrypted_value = rsa.decrypt(y, n, d)
 
-        # Convert decrypted int to chr
-        stdio.write(chr(decrypted_value))
+        # Convert decrypted int to character
+        decrypted_message += chr(decrypted_value)
 
-    stdio.writeln()
-
+    # Write the decrypted message to stdout
+    print(decrypted_message)
 
 if __name__ == "__main__":
     main()

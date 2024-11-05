@@ -10,6 +10,11 @@ def main():
 
 # Return the number of zeros in s.
 def _zeros(s):
+    """
+    :param s:
+    :return: num of zeros
+    """
+
     # Base case
     if s == "":
         return 0
@@ -21,6 +26,11 @@ def _zeros(s):
 
 # Return the number of ones in s.
 def _ones(s):
+    """
+    :param s:
+    :return num of ones:
+    """
+
     # Base case
     if s == "":
         return 0

@@ -5,15 +5,30 @@ import stdio
 class Point:
     # Constructs a new point given its x and y coordinates.
     def __init__(self, x, y):
-        ...
+        """
+        :param x:
+        :param y:
+        Initializes the instance variables
+        """
+
+        self._x = float(x)
+        self._y = float(y)
 
     # Returns the Euclidean distance between this point and other.
     def distanceTo(self, other):
-        ...
+        """
+        :param other:
+        :return distance between points self and other:
+        """
+
+        # calculated as square root of the sum of squares of the differences
+        # between the corresponding entries
+
+        return ((self._x - other._x) ** 2 + (self._y - other._y) ** 2) ** 0.5
 
     # Return a string representation of this point.
     def __str__(self):
-        return "(" + str(self._x) + ", " + str(self._y) + ")"
+        return f"({self._x}, {self._y})"
 
 
 # Unit tests the data type [DO NOT EDIT].

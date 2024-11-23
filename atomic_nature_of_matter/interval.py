@@ -5,23 +5,47 @@ import stdio
 class Interval:
     # Construct a new interval given its lower and upper bounds.
     def __init__(self, lbound, ubound):
-        ...
+        """
+        :param lbound:
+        :param ubound:
+        """
+
+        self._lbound = float(lbound)
+        self._ubound = float(ubound)
 
     # Returns the lower bound of this interval.
     def lower(self):
-        ...
+        """
+        :return:
+        """
+
+        return self._lbound
 
     # Returns the upper bound of this interval.
     def upper(self):
-        ...
+        """
+        :return:
+        """
+
+        return self._ubound
 
     # Returns True if this interval contains the point x, and False otherwise.
     def contains(self, x):
-        ...
+        """
+        :param x:
+        :return:
+        """
+
+        return self._lbound <= x <= self._ubound
 
     # Returns True if this interval intersects other, and False otherwise.
     def intersects(self, other):
-        ...
+        """
+        :param other:
+        :return:
+        """
+
+        return not (self._ubound < other.lower() or self._lbound > other.upper())
 
     # Returns a string representation of this interval.
     def __str__(self):

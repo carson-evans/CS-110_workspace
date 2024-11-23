@@ -7,22 +7,32 @@ class Rectangle:
     # Constructs a new rectangle given the x and y intervals.
     def __init__(self, xint, yint):
         ...
+        self._xint = xint
+        self._yint = yint
 
     # Returns the area of this rectangle.
     def area(self):
         ...
+        width = self._xint.upper() - self._xint.lower()
+        height = self._yint.upper() - self._yint.lower()
+        return width * height
 
     # Returns the perimeter of this rectangle.
     def perimeter(self):
         ...
+        width = self._xint.upper() - self._xint.lower()
+        height = self._yint.upper() - self._yint.lower()
+        return 2 * (width + height)
 
     # Returns True if this rectangle contains the point (x, y), and False otherwise.
     def contains(self, x, y):
         ...
+        return self._xint.contains(x) and self._yint.contains(y)
 
     # Returns True if this rectangle intersects other, and False otherwise.
     def intersects(self, other):
         ...
+        return self._xint.intersects(other._xint) and self._yint.intersects(other._yint)
 
     # Returns a string representation of this rectangle.
     def __str__(self):

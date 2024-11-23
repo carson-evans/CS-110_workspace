@@ -1,32 +1,46 @@
 1. For each problem, provide in no more than 100 words, a short, high-level description of the problem;
 your approach to solve it; and any issues you encountered and if/how you managed to solve them.
 
-Problem 1 (Sum of Integers): ...
+Problem 1 (Sum of Integers): ...  Implement the function _sumOfInts() in sum_of_ints.py that takes an integer n as argument and
+ returns the sum S(n) = 1+2+3+···+n, computed recursively using the recurrence equation
 
-Problem 2 (Bit Counts): ...
+Problem 2 (Bit Counts): ...  Implement the functions _zeros() and _ones() in bits.py that take a bit string (ie, a string of zeros
+ and ones) s as argument and return the number of zeros and ones in s, each computed recursively. The number of zeros in
+ a bit string is 1 or 0 (if the first character is ’0’ or ’1’) plus the number of zeros in the rest of the string; number of zeros in
+ an empty string is 0 (base case). The number of ones in a bit string can be defined analogously.
 
-Problem 3 (String Reversal): ...
+Problem 3 (String Reversal): ...  Implement the function _reverse() in reverse.py that takes a string s as argument and returns
+ the reverse of the string, computed recursively. The reverse of a string is the last character concatenated with the reverse of
+ the string up to the last character; the reverse of an empty string is an empty string (base case).
 
-Problem 4 (Palindrome): ...
+Problem 4 (Palindrome): ...  Implement the function _isPalindrome() in palindrome.py, using recursion, such that it returns True if
+ the argument s is a palindrome (ie, reads the same forwards and backwards), and False otherwise. You may assume that s
+ is all lower case and doesn’t include any whitespace characters. A string is a palindrome if the first character is the same as
+ the last and the rest of the string is a palindrome; an empty string is a palindrome (base case).
 
-Problem 5 (Password Checker): ...
+Problem 5 (Password Checker): ...  Implement the function _isValid() in password_checker.py that returns True if the given password
+ string meets the following requirements, and False otherwise:
 
-Problem 6 (Point Data Type): ...
+Problem 6 (Point Data Type): ...  Define a data type called Point in point.py that represents a point in 2D.
 
-Problem 7 (Interval Data Type): ...
+Problem 7 (Interval Data Type): ...  Define a data type called Interval in interval.py that represents a closed 1D interval.
 
-Problem 8 (Rectangle Data Type): ...
+Problem 8 (Rectangle Data Type): ...  Define a data type called Rectangle in rectangle.py that represents a rectangle using 1D
+ intervals (ie, Interval objects) to represent its x (width) and y (height) segments.
 
-Problem 9 (Particle Representation): ...
+Problem 9 (Particle Representation): ...  Define a data type called Blob in blob.py to represent a particle (aka blob).
 
-Problem 10 (Particle Identification): ...
+Problem 10 (Particle Identification): ... Read image, classify pixels as foreground or background, find blobs (particles).
 
-Problem 11 (Particle Tracking): ...
+Problem 11 (Particle Tracking): ...  writes to standard output (one per
+ line, formatted with 4 decimal places to the right of decimal point) the radial distance that each bead moves from one frame
+ to the next (assuming it is no more than delta).
 
-Problem 12 (Estimating Avogadro's Constant): ...
+Problem 12 (Estimating Avogadro's Constant): ...  Implement a program called avogadro.py that accepts the displacements (output of bead_tracker.py) from standard input; computes
+ an estimate of Avogadro’s constant using the formulae described above; and writes the value to standard output
 
 2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
-the nature of help received.
+the nature of help received. No, I did not.
 
 Name                   Status           Help Received
 ----                   ------           -------------
@@ -35,5 +49,11 @@ Name                   Status           Help Received
 
 3. List any other comments here. Feel free to provide any feedback on how much you learned from
 doing the assignment, and whether you enjoyed doing it.
+
+If you are reading this, add me on github and linkedin.
+Go Dawgs!
+
+Also, sorry for being absent so much recently my grandfather just passed away.
+
 
 ...

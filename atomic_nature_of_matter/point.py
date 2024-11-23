@@ -28,7 +28,7 @@ class Point:
 
     # Return a string representation of this point.
     def __str__(self):
-        return "(" + str(self._x) + ", " + str(self._y) + ")"
+        return f"({self._x}, {self._y})"
 
 
 # Unit tests the data type [DO NOT EDIT].

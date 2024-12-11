@@ -1,0 +1,26 @@
+1. For each problem, provide in no more than 100 words, a short, high-level description of the
+problem; your approach to solve it; and any issues you encountered along the way and if/how you
+managed to solve those issues.
+
+Problem 1 (Spell Checker): ...
+
+Problem 2 (Word Occurrences): ...
+
+Problem 3 (Markov Model Data Type): ...
+
+Problem 4 (Random Text Generator): ...
+
+Problem 5 (Noisy Message Decoder): ...
+
+2. Did you receive help from anyone? List their names, status (classmate, course staff, other), and
+the nature of help received.
+
+Name                   Status           Help Received
+----                   ------           -------------
+
+...                    ...              ...
+
+3. List any other comments here. Feel free to provide any feedback on how much you learned from
+doing the assignment, and whether you enjoyed doing it.
+
+...
